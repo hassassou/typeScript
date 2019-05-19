@@ -35,3 +35,28 @@
     - `let numberStringBoolean: number | string | boolean;`
 7. check type of a variable:
     - `if (typeof var == "number") { console.log("Var is a number");}`
+8. Changing the compiler behavior:
+    - go to the tsconfig.json file, then add :
+        $ "noEmitOnError": true
+    - to enable the debug mode:
+        $ we must change the sourceMap option to true,
+            that will be generate a js file that we can use to debug our application.
+9. The spreed Operator:
+    - if we have a list : `let numbers = [5,8,4,8];`
+        - to spreed that list we just should three point like that `...numbers`
+         example: `console.log(Math.max(...numbers));`    
+10. The Rest Operator:
+    - if i want to create a function that I dont know how many arguments will be taken:
+        - example : `function sum(...args: numbers[]) {// the function core};`
+11. Destructuring:
+    - for arrays:
+        - `const myNotes = [16, 19];`
+        - `const [note1, note2] = myNotes;`
+    - for objects:
+        - `const uData = {u1: "U1", u2: "U2", u3: 40};`
+        - `const {u1: ud1, u3: ud3} = uData;`
+        - `console.log(ud1, ud3);`
+12. Template Literals:
+    - if we want to concatenate strings:
+        - `const name = "HASSA";`
+        - const str = `Hello my name is ${name}.``
